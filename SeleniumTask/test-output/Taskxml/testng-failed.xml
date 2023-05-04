@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Taskxml]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SeleniumTask(failed)">
+    <groups>
+      <run>
+        <include name="checkinTests"/>
+        <exclude name="Methods"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="bookstoreAppSeleniumTask.SelemiumTask">
+        <methods>
+          <include name="varifyingTheTittle"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- bookstoreAppSeleniumTask.SelemiumTask -->
+    </classes>
+  </test> <!-- SeleniumTask(failed) -->
+</suite> <!-- Failed suite [Taskxml] -->

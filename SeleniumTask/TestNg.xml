@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Taskxml" verbose="1" >
+
+    <test name="SeleniumTask">
+        <groups>
+            <run>
+                <exclude name="Methods"  />
+                <include name="checkinTests"  />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="bookstoreAppSeleniumTask.SelemiumTask">
+              <methods>
+        <include name="setUp" />
+        <include name="varifyingTheTittle" />
+        <include name="varifyTheBookStoreLogoDisplayingOrNot" />
+        <include name="loginToTheBookStoreApp" />
+        <include name="addingBookToCart" />
+      </methods>
+           
+            </class>
+        </classes>
+    </test>
+
+</suite>
